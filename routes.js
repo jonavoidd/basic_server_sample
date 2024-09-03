@@ -17,7 +17,7 @@ router.get("/lastname", (req, res) => {
 });
 
 router.get("/age", (req, res) => {
-  res.send(profile.age);
+  res.send(profile.age.toString());
 });
 
 router.get("/schoolemail", (req, res) => {
