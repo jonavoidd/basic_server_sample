@@ -2,6 +2,12 @@ const express = require("express");
 const router = express.Router();
 const profile = require("./profile");
 
+router.get("/", (req, res) => {
+  res.send(
+    `Welcome to this server. To get started, try adding ["/firstname", "/lastname", "/age", "/school-email", "/my-data"] in the url`
+  );
+});
+
 router.get("/firstname", (req, res) => {
   res.send(profile.fistname);
 });
